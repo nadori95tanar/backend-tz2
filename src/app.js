@@ -6,6 +6,8 @@ const app = express();
 
 const PORT = 24110;
 
+app.use(express.json());
+
 app.use("/api", apiRouter);
 
 app.get("/", (req, res) => {
